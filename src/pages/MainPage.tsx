@@ -1,9 +1,11 @@
+import styles from "./MainPage.module.scss";
+
 export const MainPage = () => {
     return (
         <>
             <h1>GreenHornDev</h1>
-            <div className="description-background">
-                <p className="header-text header-description">A developing journey</p>
+            <div className={styles.descriptionBackground}>
+                <p className={styles.headerText}>A developing journey</p>
             </div>
         </>
     )

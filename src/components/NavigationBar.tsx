@@ -4,7 +4,7 @@ import styles from "./NavigationBar.module.scss";
 export const NavigationBar = () => {
     return (
         <nav>
-            <ul className="navigation-menu">
+            <ul className={styles.navigationMenu}>
                 <li className={styles.menuItem}><Link to="/">A_LOGO</Link></li>
                 <li className={styles.menuItem}><Link to="/about">About</Link></li>
                 <li className={styles.menuItem}><Link to="/gallery">Gallery</Link></li>
