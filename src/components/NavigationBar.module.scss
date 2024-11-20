@@ -1,0 +1,33 @@
+
+.menuItem {
+  font-size: 1.5rem;
+
+  border: white 1px solid;
+  border-top: none;
+  border-bottom: none;
+
+  transition: all 0.5s;
+}
+
+.menuItem:first-child {
+  border-left: none;
+}
+
+.menuItem:last-child {
+  border-right: none;
+}
+
+.menuItem, .menuItem > a {
+  text-decoration: none;
+  color: var(--white);
+
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.menuItem:hover {
+  background: darkgreen;
+  box-shadow: inset 0 -0.75rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
