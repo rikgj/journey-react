@@ -1,0 +1,58 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>GreenHornDev | Journey</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                width: 300px;
+                height: 300px;
+            }
+            .background{
+                width: 100%;
+                height: 100%;
+                background: #5DBCF9;
+            }
+            .box{
+                position: absolute;
+                box-sizing:border-box;
+                left: 0;
+                top: 0;
+                background: #FFFFFF;
+                width: 40px;
+            }
+
+            .long {
+                left: 40px;
+                height: 100%;
+            }
+
+            .short {
+                height: 120px;
+            }
+            .b1{
+                left:40px;
+                transform: rotate(90deg);
+            }
+
+            .b2{
+                left:40px;
+                transform: translateY(180px) rotate(90deg);
+            }
+            .b3{
+                left:180px;
+                top: 90px;
+            }
+
+        </style>
+    </head>
+    <body>
+    <div class="background">
+        <div class="box long"></div>
+        <div class="box short b1"></div>
+        <div class="box short b2"></div>
+        <div class="box short b3"></div>
+    </div>
+    </body>
+</html>

@@ -2,7 +2,7 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import {MainPage} from "./pages/MainPage.tsx";
 import {ErrorPage} from "./pages/ErrorPage.tsx";
 import {About} from "./pages/About.tsx";
-import {Gallery} from "./pages/Gallery.tsx";
+import {Gallery} from "./pages/gallery/Gallery.tsx";
 import {Layout} from "./components/Layout.tsx";
 
 const basicRoutes = createBrowserRouter([

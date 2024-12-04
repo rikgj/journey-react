@@ -26,6 +26,11 @@ h1 {
     text-shadow: grey 2px 2px;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     background: white;
     display: flex;
