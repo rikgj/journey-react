@@ -6,7 +6,7 @@ export function FramedPhoto() {
 // take start ref as parameter
     // must fetch css and js separately
     // const url = "https://raw.githubusercontent.com/rikgj/journey-react/refs/heads/main/src/pages/Gallery.tsx"
-    const url = "src/pages/gallery/photos/photo-1.html";
+    const url = "/photos/photo-1.html";
 
     const [data, setData] = useState("NO DATA");
     useEffect(() => {
@@ -23,7 +23,7 @@ export function FramedPhoto() {
                 <div className={`${styles.framedPhotoInfo} ${styles.left} ${styles.code}`}>{data}</div>
                 <div className={`${styles.framedPhotoInfo} ${styles.right} ${styles.code}`}>{data}</div>
                 <div className={styles.framedPhoto}>
-                    <iframe srcDoc={data} sandbox=""  />
+                    <iframe srcDoc={data} sandbox="al"  />
                 </div>
             </div>
         </>
