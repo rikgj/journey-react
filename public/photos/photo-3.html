@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    body {
+      margin: 0;
+      height: 300px;
+      width: 400px;
+    }
+    :root{
+      --background:#FFFFFF;
+      --fig-back:#63A3A0;
+      --fig-contrast:#0B2429;
+    }
+
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      background: var(--background, blue);
+    }
+
+    .wrapper>div{
+      width: 100%;
+      height: 50%;
+      position: relative;
+      background: var(--fig-back);
+      overflow: clip;
+    }
+
+    .circle{
+      width: 50%;
+      aspect-ratio: 1;
+      background: var(--fig-contrast);
+      border-radius: 100%;
+      position: absolute;
+      margin-left: 25%;
+      margin-top: 50px;
+    }
+    .circle::after{
+      content: "";
+      width: 80px;
+      aspect-ratio: 1;
+      background: var(--background);
+      position: absolute;
+      inset: 60px 60px;
+      border-radius: 100%;
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <div>
+    <div class="circle"></div>
+  </div>
+</div>
+</body>
+</html>
