@@ -1,18 +1,17 @@
 import styles from "./Gallery.module.scss";
 import {FramedPhoto} from "./FramedPhoto.tsx";
-import {useEffect, useState} from "react";
 
 export const Gallery = () => {
 // take start ref as parameter
     // must fetch css and js separately
     // const url = "https://raw.githubusercontent.com/rikgj/journey-react/refs/heads/main/src/pages/Gallery.tsx"
 
-    const [photos, setPhotos] = useState([""]);
-    const [index, setIndex] = useState(1);
-const viteFlag = "window.__vite_plugin_react_preamble_installed__ = true";
+    // const [photos, setPhotos] = useState([""]);
+    // const [index, setIndex] = useState(1);
+// const viteFlag = "window.__vite_plugin_react_preamble_installed__ = true";
     const urls = (Array.from({length: 3}).map((_, i) => `/photos/photo-${i+1}.html`));
-    useEffect(() => {
-        console.log(index);
+    // useEffect(() => {
+        // console.log(index);
 
         // Promise.all(urls.map(url => fetch(url)))
         //         .then(response => response.text())
@@ -35,7 +34,7 @@ const viteFlag = "window.__vite_plugin_react_preamble_installed__ = true";
         //             console.log("No more photos");
         //         }
         //     })
-    }, [index]);
+    // }, [index]);
 
     return (
         <>
