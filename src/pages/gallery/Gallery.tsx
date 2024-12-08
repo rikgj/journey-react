@@ -9,7 +9,7 @@ export const Gallery = () => {
     // const [photos, setPhotos] = useState([""]);
     // const [index, setIndex] = useState(1);
 // const viteFlag = "window.__vite_plugin_react_preamble_installed__ = true";
-    const urls = (Array.from({length: 3}).map((_, i) => `/photos/photo-${i+1}.html`));
+    const urls = (Array.from({length: 4}).map((_, i) => `/photos/photo-${i+1}.html`));
     // useEffect(() => {
         // console.log(index);
 
