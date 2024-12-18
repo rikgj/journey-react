@@ -11,6 +11,8 @@
 }
 
 $--transition-time: .4s;
+$--frame-width: 400px;
+$--frame-height: 300px;
 
 .frame {
   margin: 1rem;
@@ -18,29 +20,16 @@ $--transition-time: .4s;
   background: black;
   user-select: none;
   transition: box-shadow $--transition-time;
-
 }
 
-
-
 .framedPhoto {
-  width: 320px;
-  height: 320px;
   background-color: bisque;
-  padding: 1rem;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  transform: scale(.7);
-
 }
 
 .framedPhoto > iframe {
   display: block;
-  width: 300px;
-  height: 300px;
+  width: $--frame-width;
+  height: $--frame-height;
 }
 
 .framedPhotoInfo {

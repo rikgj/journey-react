@@ -3,47 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-  <style>
-    body{
-      margin: 0;
-    }
+    <style>
+        body {
+            margin: 0;
+            height: 300px;
+            width: 400px;
+        }
 
-    .wrapper{
-      width: 100%;
-      height: 100%;
-      background: #F0DAC1;
-    }
-    .sqr1{
-      width: 140px;
-      height: 180px;
-      background: #C3463D;
-      position: absolute;
-      top: 30px;
-    }
+        .wrapper {
+            width: 100%;
+            height: 100%;
+            background: #F0DAC1;
+        }
 
-    .sqr2{
-      width: 300px;
-      height: 180px;
-      background: #A52F28;
-      position: absolute;
-      top: 90px;
-    }
-    .sqr2::after{
-      content: "";
-      width: 127px;
-      aspect-ratio: 1;
-      position: absolute;
-      background: #F0DAC1;
-      top: 26px;
-      left: 236px;
-      transform: rotate(45deg);
-    }
-  </style>
+        .sqr1 {
+            width: 140px;
+            height: 180px;
+            background: #C3463D;
+            position: absolute;
+            top: 30px;
+        }
+
+        .sqr2 {
+            width: 300px;
+            height: 180px;
+            background: #A52F28;
+            position: absolute;
+            top: 90px;
+        }
+
+        .sqr2::after {
+            content: "";
+            width: 127px;
+            aspect-ratio: 1;
+            position: absolute;
+            background: #F0DAC1;
+            top: 26px;
+            left: 236px;
+            transform: rotate(45deg);
+        }
+    </style>
 </head>
 <body>
 <div class="wrapper">
-  <div class="sqr2"></div>
-  <div class="sqr1"></div>
+    <div class="sqr2"></div>
+    <div class="sqr1"></div>
 </div>
 </body>
 </html>
