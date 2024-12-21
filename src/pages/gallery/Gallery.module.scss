@@ -24,12 +24,16 @@ $--frame-height: 300px;
 
 .framedPhoto {
   background-color: bisque;
+  position: relative;
+  width: $--frame-width;
+  height: $--frame-height;
 }
 
 .framedPhoto > iframe {
   display: block;
   width: $--frame-width;
   height: $--frame-height;
+  border: none;
 }
 
 .framedPhotoInfo {
@@ -37,6 +41,8 @@ $--frame-height: 300px;
   top: 20vh;
   height: 70vh;
   width: fit-content;
+
+  overflow: clip; // TODO should be able to view the whole thing
 
   align-content: center;
   padding: 1rem;
