@@ -11,16 +11,12 @@
 
     color: var(--white);
 }
-html{
-    background: lime;
-}
+
 #root{
     height: 100%;
 
     display: flex;
     flex-direction: column;
-
-    background: linear-gradient(lime 0%, limegreen 100%) no-repeat;
 }
 
 h1 {
@@ -35,7 +31,7 @@ html, body {
 }
 
 body {
-    background: white;
+    background: linear-gradient(lime 0%, limegreen 100%) no-repeat;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -58,8 +54,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    flex-grow: 1;
 }
 
 
